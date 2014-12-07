@@ -44,7 +44,6 @@ module.exports = function(app) {
                 if (error) {
                     res.send(error);
                 }
-                console.log(stats._json.contents);
                 userFiles.findOne({
                     id: req.session.uid,
                     directory: directory
